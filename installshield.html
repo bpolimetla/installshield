@@ -1,0 +1,327 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Generator" content="Microsoft Word 97">
+   <meta name="Template" content="C:\Program Files\Microsoft Office\Office\html.dot">
+   <meta name="GENERATOR" content="Mozilla/4.7 [en] (WinNT; U) [Netscape]">
+   <title>InstallShield</title>
+</head>
+<body link="#0000FF" vlink="#800080">
+
+<center><font color="#FF0000"><font size=+1>InstallShield</font></font></center>
+
+<p><b>Preface:</b> When you want to copy your software into some other
+machine, we need to do few routine things. Few of them including registering
+the .dll files, checking for existing version. Ask of user opinion, setting
+expiry dates for evolution copies, restricting the total installations
+to given number of licenses and so on. To do this in windows environment
+there is few software available. One is InstallShield setup coming along
+with Visual Basic and another one is InstallShield Software from InstallShield.com.
+In InstallShield the best one is InstallShield Professional. It is very
+user friendly software. Here never depend on AppWizard. It is better to
+do hand coding. All the time test the software on bare machine. For more
+details please visit <a href="http://www.installshield.com">http://www.installshield.com</a>.
+Before starting writing any Setup application confirm the following things.
+Then only start the writing Setup application.<font size=+1></font>
+<p><br>
+<center><table BORDER CELLSPACING=0 CELLPADDING=7 WIDTH="590" >
+<tr>
+<td VALIGN=TOP WIDTH="7%">1</td>
+
+<td VALIGN=TOP WIDTH="93%">Executable files
+<ol>
+<li>
+Over wirte the existing one.</li>
+
+<li>
+Checking for other exes.</li>
+
+<li>
+Checking for system registry for other info.</li>
+
+<li>
+Any other info.</li>
+</ol>
+</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="7%">2</td>
+
+<td VALIGN=TOP WIDTH="93%">DLLs
+<ol>
+<li>
+Over wirte the existing one.</li>
+
+<li>
+Checking for other exes.</li>
+
+<li>
+Checking for system registry for other info.</li>
+
+<li>
+Any other info.</li>
+</ol>
+</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="7%">3</td>
+
+<td VALIGN=TOP WIDTH="93%">OCX files
+<ol>
+<li>
+Over wirte the existing one.</li>
+
+<li>
+Checking for other exes.</li>
+
+<li>
+Checking for system registry for other info.</li>
+
+<li>
+Any other info.</li>
+</ol>
+</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="7%">4</td>
+
+<td VALIGN=TOP WIDTH="93%">Writing into INI files
+<ol>
+<li>
+Win.ini</li>
+
+<li>
+System.ini</li>
+
+<li>
+other .ini files</li>
+</ol>
+</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="7%">5</td>
+
+<td VALIGN=TOP WIDTH="93%">System Registry
+<ol>
+<li>
+creating the new key and data values.</li>
+
+<li>
+Shall we need to update existing one.</li>
+
+<li>
+Deleting the existing key and data values.</li>
+
+<li>
+Reading the required information from registy.</li>
+</ol>
+</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="7%">6</td>
+
+<td VALIGN=TOP WIDTH="93%">Submiting the SQL Scripts at Database Prompt
+<ol>
+<li>
+Client sie</li>
+
+<li>
+server side</li>
+</ol>
+Before doing this verify the right version of Database with the help of
+System Registry</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="7%">7</td>
+
+<td VALIGN=TOP WIDTH="93%">Collect the directory structure to where you
+are copying.</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="7%">8</td>
+
+<td VALIGN=TOP WIDTH="93%">Create the bitmaps.
+<ol>
+<li>
+Startup bitmap</li>
+
+<li>
+Backgroup bitmap</li>
+
+<li>
+Bitmap in dialog</li>
+
+<li>
+Bill boards</li>
+</ol>
+</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="7%">9</td>
+
+<td VALIGN=TOP WIDTH="93%">Create the Icons</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="7%">10</td>
+
+<td VALIGN=TOP WIDTH="93%">Create the Short cut keys
+<ol>
+<li>
+system menu</li>
+
+<li>
+desktop</li>
+
+<li>
+other folders.</li>
+</ol>
+</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="7%">11</td>
+
+<td VALIGN=TOP WIDTH="93%">Collect the licsence information</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="7%">12</td>
+
+<td VALIGN=TOP WIDTH="93%">Collect the logos to display</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="7%">13</td>
+
+<td VALIGN=TOP WIDTH="93%">Give complete text to spell check and grammer
+check.</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="7%">14</td>
+
+<td VALIGN=TOP WIDTH="93%">Where to copy the files
+<ol>
+<li>
+standard place</li>
+
+<li>
+give the option to user</li>
+</ol>
+</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="7%">15</td>
+
+<td VALIGN=TOP WIDTH="93%">Would you like to give any service packs in
+near future?
+<p>If yes set the required info. In registy.</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="7%">16</td>
+
+<td VALIGN=TOP WIDTH="93%">Restict the user to particular number of installations.</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="7%">17</td>
+
+<td VALIGN=TOP WIDTH="93%">Would you like to set any expiry date?</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="7%">18</td>
+
+<td VALIGN=TOP WIDTH="93%">If power fails what will be happen to your install
+shield?</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="7%">19</td>
+
+<td VALIGN=TOP WIDTH="93%">Test on the bare machine.</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="7%">20</td>
+
+<td VALIGN=TOP WIDTH="93%">For any doubts please see the knowledge base
+at
+<p>Installshield.com</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="7%">21</td>
+
+<td VALIGN=TOP WIDTH="93%">For what purpose you are using InstallShield?
+<ol TYPE="a">
+<li>
+Just to install into client machine</li>
+
+<li>
+To Promote your product.</li>
+
+<li>
+To give extra bill to your client.</li>
+</ol>
+</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="7%">22</td>
+
+<td VALIGN=TOP WIDTH="93%">Avialable softwares
+<ol TYPE="a">
+<li>
+VB InstallShield</li>
+
+<li>
+InstallShield Professional (Most prefereble)</li>
+
+<li>
+InstallShield for various softwares</li>
+</ol>
+</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="7%">23</td>
+
+<td VALIGN=TOP WIDTH="93%">Take care that you are using otherised version
+of InstallShield. Once it went to the market InstallShield or other company
+people may check for piracy.</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="7%">24</td>
+
+<td VALIGN=TOP WIDTH="93%">Estimated time: To finish complete task.
+<ol>
+<li>
+For Professional: 24 Hours. I.e three Man days.&nbsp;</li>
+
+<li>
+For medium: 15 man days.&nbsp;</li>
+
+<li>
+For Layman: 2 man months.</li>
+</ol>
+</td>
+</tr>
+</table></center>
+
+<p>Issued by Bhavani Prasad Polimetla in Public interest.
+</body>
+</html>
